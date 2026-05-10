@@ -41,6 +41,9 @@ results.md
 temp-profile-*
 saved_trajectories/
 
+# System prompt backups
+browser_use/agent/system_prompts/backups/
+
 # Claude
 .claude/
 CLAUDE.local.md
