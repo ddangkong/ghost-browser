@@ -1,7 +1,7 @@
 # Ghost Browser by Gemma
 
 > **Free, local browser automation agent** powered by Gemma4 27B + Ollama —  
-> ranked **3rd overall** on Browser-Use Stealth Benchmark V1, outperforming most paid cloud services.
+> ranked **3rd in our 79-task Stealth Bench V1 run**, competitive with several paid cloud browser providers.
 
 > **Experimental local browser automation runner evaluated on Browser-Use Stealth Bench V1.**  
 > Results are environment-dependent and not a guarantee of bypassing any specific protection.
@@ -24,6 +24,8 @@
 | 10 | local_headless | 80 | 2 | **3%** | 💻 Local |
 
 **67.1% with a free local model — no API key, no subscription, no cloud dependency.**
+
+> Note: other agents ran 80 tasks; our run completed 79. Results are from the same benchmark suite under the same judge LLM, but are not perfectly matched conditions.
 
 ### Reproducibility
 
@@ -54,7 +56,7 @@ Being transparent about what failed and why:
 | Site down during test | 2 | belk, davidjones | Not our fault |
 | Login popup blocking content | 1 | douyin | Task-specific handling |
 
-**Theoretical ceiling:** resolve timeouts → ~73%, resolve Press & Hold → ~90%+.  
+**Rough upper bound** (if each failure category were independently resolved): timeouts → ~73%, Press & Hold → ~90%+. These are estimates, not guarantees.  
 Full per-task breakdown in [`benchmark_results.json`](benchmark_results.json).
 
 ---
@@ -131,7 +133,7 @@ We're sharing this as an open experiment in local LLM browser automation.
 **Gemma4 is getting better fast** — and we want to grow this together.
 
 If you're interested in:
-- Improving stealth techniques (Press & Hold, fingerprint spoofing)
+- Improving challenge interaction handling (Press & Hold, browser compatibility)
 - Trying with other local models (Mistral, Llama, Qwen…)
 - Building a UI layer (chat interface + live browser view)
 - Running benchmarks on your own hardware and comparing results
