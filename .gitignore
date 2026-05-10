@@ -1,0 +1,46 @@
+# Cache
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Environments
+.venv*/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+dist/
+
+# Data
+*.gif
+*.txt
+*.pdf
+*.csv
+*.json
+*.jsonl
+*.log
+*.bak
+*.bak_*
+
+# Secrets
+.env
+secrets.env
+browser_cookies.json
+credentials.json
+token.json
+
+# Runtime
+logs/
+results.md
+.browser-profile/
+temp-profile-*
+saved_trajectories/
+
+# Claude
+.claude/
+CLAUDE.local.md
